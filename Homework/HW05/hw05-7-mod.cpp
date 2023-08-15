@@ -21,3 +21,21 @@
         February has 29 days
 
 */
+#include <stdio.h>
+int main(){
+    int year ;
+
+    printf("Test case:\n") ;
+    printf("\tYear(s) : \n\t\t") ;
+    scanf("%d" , &year) ;
+    printf("Output:\n\t") ;
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+    {
+        printf("February has 29 days") ;
+    }
+    else
+    {
+        printf("February has 28 days") ;
+    }
+    return 0 ;
+}
